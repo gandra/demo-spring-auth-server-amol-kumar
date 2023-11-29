@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "0e295ef9-a677-4e5b-a257-f2e86b280b61",
+		"name": "Spring Boot Demo Oauth Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1551978"
+	},
+	"item": [
+		{
+			"name": "public-client token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/oauth2/token?grant_type=client_credentials&client_id=public-client&client_secret=secret&redirect_uri=http://127.0.0.1:3000/login/oauth2/code/public-client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials"
+						},
+						{
+							"key": "client_id",
+							"value": "public-client"
+						},
+						{
+							"key": "client_secret",
+							"value": "secret"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://127.0.0.1:3000/login/oauth2/code/public-client"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
